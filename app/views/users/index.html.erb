@@ -11,7 +11,7 @@
       <th>Calories Burned</th>
     </tr>
   </thread>
-</table>
+
 <tbody>
   <% @users.each do |user| %>
   <tr>
@@ -21,11 +21,11 @@
     <td><%= user.exercise %></td>
     <td><%= user.sleep %></td>
     <td><%= user.calories %></td>
-
 </tr>
 <% end %>
 </tbody>
 </table>
+
 <div>
   <h4>Import that data!</h4>
   <%= form_tag import_users_path, multipart: true do %>
